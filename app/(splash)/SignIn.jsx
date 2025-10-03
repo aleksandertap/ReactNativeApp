@@ -13,11 +13,15 @@ const SignIn = () => {
     const goToSignUp = () =>{
       router.push("SignUp")
     }
+
+    const logIn = () => {
+      router.push("/(tabs)/Home")
+    }
   return (
     <View style={styles.container}>
       <Input text="E-mail" placeholderText="example@gmail.com" />
       <Input text="Password" placeholderText="*********" isPassword/>
-      <Button text="Sign In" />
+      <Button text="Sign In" onPress={logIn} />
       <Seperator text="Or sign up with" />
       <GoogleBtn />
       <View style={styles.bottomText}>

@@ -20,7 +20,7 @@ const Splash = () => {
     <View style={styles.container}>
       <Image
         resizeMode="contain"
-        source={require("../assets/images/100501.png")}
+        source={require("../../assets/images/100501.png")}
         style={styles.image}
       />
 
