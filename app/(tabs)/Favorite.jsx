@@ -4,11 +4,22 @@ import Header from '@/components/loggedIn/Header'
 import { products } from '@/data/products'
 import FavoriteItem from '@/components/loggedIn/FavoriteItem'
 import { colors } from '@/assets/styles/colors'
+import { useRouter } from 'expo-router'
 
 const Favorite = () => {
+  const router = useRouter()
+
   const renderItem = ({item}) => {
+    const onProductPress = () =>{
+      router.push({
+                pathname: "/ProductDetails/ProductDetails", 
+                params: {
+                    product: JSON.stringify(item) 
+                }
+            })
+    }
     return (
-      <FavoriteItem {...item} />
+      <FavoriteItem onPress={onProductPress} {...item} />
     )
   }
 

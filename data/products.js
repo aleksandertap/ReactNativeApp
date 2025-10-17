@@ -5,6 +5,7 @@ export const products = [
     image: "https://cdn.shopify.com/s/files/1/0824/6516/1546/files/Loft_chair_with_Tropical_fabric_close_up.jpg?v=1748863651&width=1200",
     category: 1,
     price: "$ 20.00",
+    description: "cool chair"
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export const products = [
       "https://www.crafterscorner.in/cdn/shop/files/DMCMA14764_1.jpg?v=1721196207&width=1400",
     category: 2,
     price: "$ 25.00",
+    description: "cool table"
   },
   {
     id: 3,
@@ -20,6 +22,7 @@ export const products = [
     image: "https://www.woods-furniture.co.uk/images/products/standard/7706_8118.jpg",
     category: 3,
     price: "$ 45.00",
+    description: "cool armchair 1"
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ export const products = [
       "https://cdn.shopify.com/s/files/1/0079/2539/9616/products/myakka-chairs-jalkamal-block-print-footstool-28730051264703_2000x.jpg?v=1629217511",
     category: 3,
     price: "$ 80.00",
+    description: "cool armchari 2"
   },
   {
     id: 5,
@@ -38,5 +42,6 @@ export const products = [
       "https://sofasandstuff.com/images/uploaded/topic/velvet/1-Velvet-sofas-page-assets3.jpg",
     category: 4,
     price: "$ 120.00",
+    description: "cool sofa"
   },
 ];

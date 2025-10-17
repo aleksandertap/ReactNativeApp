@@ -6,15 +6,15 @@ import Button from "@/components/Button";
 import { colors } from "@/assets/styles/colors";
 
 const Splash = () => {
-  const router = useRouter()
+  const router = useRouter();
 
-  const goToSignUp = () =>{
-    router.push("SignUp")
-  }
+  const goToSignUp = () => {
+    router.push("SignUp");
+  };
 
   const goToSignIn = () => {
-    router.push("SignIn")
-  }
+    router.push("SignIn");
+  };
 
   return (
     <View style={styles.container}>
@@ -30,7 +30,7 @@ const Splash = () => {
         <Text style={styles.title}> Here!</Text>
       </View>
 
-      <Button text="Sign Up" onPress={goToSignUp}/>
+      <Button text="Sign Up" onPress={goToSignUp} />
 
       <Pressable onPress={goToSignIn}>
         <Text style={styles.footerText}>Sign in</Text>
@@ -42,10 +42,10 @@ const Splash = () => {
 const styles = StyleSheet.create({
   container: {
     padding: 16,
-    justifyContent: 'space-around',
-    alignItems:'center',
-    height: '100%',
-    backgroundColor: colors.white
+    justifyContent: "space-around",
+    alignItems: "center",
+    height: "100%",
+    backgroundColor: colors.white,
   },
   image: {
     width: "100%",
