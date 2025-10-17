@@ -1,19 +1,11 @@
 import { Tabs } from "expo-router";
 import React from "react";
 import { Image } from "react-native";
-import { ThemeProvider } from "@react-navigation/native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 const _layout = () => {
-  const theme = {
-    colors: {
-      background: "white",
-    },
-  };
 
   return (
-    <SafeAreaView>
-      <ThemeProvider value={theme}>
+    <>
         <Tabs
           screenOptions={({ route }) => ({
             tabBarIcon: ({ focused, color, size }) => {
@@ -43,8 +35,7 @@ const _layout = () => {
           <Tabs.Screen name="Favorite" />
           <Tabs.Screen name="Profile" />
         </Tabs>
-      </ThemeProvider>
-    </SafeAreaView>
+   </>
   );
 };
 
