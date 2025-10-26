@@ -1,16 +1,16 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import { colors } from "@/assets/styles/colors";
 
-const ListItem = ({ title, subtitle }) => {
+const ListItem = ({ title, subtitle, onPress, style }) => {
   return (
-    <View style={styles.container}>
+    <Pressable style={[styles.container, style]} onPress={onPress}>
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
-        <Text style={styles.subtitle}>{subtitle}</Text>
+        {!!subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
       </View>
       <Image style={styles.arrow} source={require("../../assets/images/arrow.png")} />
-    </View>
+    </Pressable>
   );
 };
 
@@ -36,11 +36,11 @@ const styles = StyleSheet.create({
     color: colors.blue,
     fontSize: 18,
     fontWeight: "bold",
-    marginBottom: 6,
   },
   subtitle: {
     color: colors.grey,
     fontSize: 12,
+    marginTop: 6,
   },
   arrow: {
     height: 32,
