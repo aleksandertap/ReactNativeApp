@@ -30,7 +30,7 @@ const Splash = () => {
         <Text style={styles.title}> Here!</Text>
       </View>
 
-      <Button text="Sign Up" onPress={goToSignUp} />
+      <Button text="Sign Up" onPress={goToSignUp} style={styles.signUpBtn}/>
 
       <Pressable onPress={goToSignIn}>
         <Text style={styles.footerText}>Sign in</Text>
@@ -65,6 +65,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 16,
   },
+  signUpBtn: {
+    width:300,
+    height: 60,
+  }
 });
 
 export default Splash;

@@ -48,7 +48,7 @@ const NewListing = () => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, padding:24, backgroundColor: colors.white  }}>
       <KeyboardAvoidingView behavior="position">
         <Header title="Create a new listing" onBackPress={goBack} showBack={true} />
         <View style={styles.container}>
@@ -113,8 +113,7 @@ const NewListing = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 24,
-    backgroundColor: colors.white,
+    paddingTop: 16,
   },
   sectionTitle: {
     fontSize: 14,

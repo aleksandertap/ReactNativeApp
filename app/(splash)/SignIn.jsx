@@ -21,7 +21,7 @@ const SignIn = () => {
     <View style={styles.container}>
       <Input text="E-mail" placeholderText="example@gmail.com" />
       <Input text="Password" placeholderText="*********" isPassword/>
-      <Button text="Sign In" onPress={logIn} />
+      <Button text="Sign In" onPress={logIn}  style={styles.signInBtn}/>
       <Seperator text="Or sign up with" />
       <GoogleBtn />
       <View style={styles.bottomText}>
@@ -52,6 +52,10 @@ const styles = StyleSheet.create({
   },
   bottomText: {
     alignItems: "center",
+  },
+  signInBtn: {
+    width: "100%",
+    height: 60,
   },
 });
 

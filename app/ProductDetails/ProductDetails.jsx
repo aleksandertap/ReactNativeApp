@@ -42,7 +42,7 @@ const ProductDetails = () => {
         <Pressable style={styles.bookmarkContainer}>
           <Image source={require("@/assets/tabs/favorites.png")}  style={styles.bookmarkIcon}/>
         </Pressable>
-        <Button text="Contact Seller" onPress={onContact} />
+        <Button text="Contact Seller" onPress={onContact} style={styles.contactBtn}/>
       </View>
     </View>
   );
@@ -110,7 +110,11 @@ const styles = StyleSheet.create({
   backIcon: {
     width:20,
     height:20
-  }
+  },
+  contactBtn: {
+    flex: 1,
+    height: 60,
+  },
 });
 
 export default ProductDetails;

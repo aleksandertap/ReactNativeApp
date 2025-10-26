@@ -27,7 +27,7 @@ const Setting = () => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.mainContainer}>
       <Header title="Settings" />
       <View style={styles.container}>
         <View style={styles.sectionHeader}>
@@ -50,7 +50,8 @@ const Setting = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  mainContainer: {
+    flex: 1,
     padding: 24,
   },
   item: {

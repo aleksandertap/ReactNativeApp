@@ -11,8 +11,8 @@ const Profile = () => {
   const router = useRouter();
 
   const onLogOut = () => {
-    console.log("Logging out");
-  };
+    router.push("/(splash)")
+  }
 
   const onSettingsPress = () => {
     router.push("/Profile/Setting");

@@ -1,9 +1,9 @@
 import React from "react";
 import { Pressable, Text, StyleSheet } from "react-native";
 
-const Button = ({ text, onPress }) => {
+const Button = ({ text, onPress, style }) => {
   return (
-    <Pressable style={styles.button} onPress={onPress}>
+    <Pressable style={[styles.button, style]} onPress={onPress}>
       <Text style={styles.buttonText}>{text}</Text>
     </Pressable>
   );
@@ -11,8 +11,6 @@ const Button = ({ text, onPress }) => {
 
 const styles = StyleSheet.create({
   button: {
-    flex:1,
-    height: 40,
     backgroundColor: "#4F63AC",
     paddingVertical: 10,
     paddingHorizontal: 8,

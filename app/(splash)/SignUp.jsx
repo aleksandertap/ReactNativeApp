@@ -38,7 +38,7 @@ const SignUp = () => {
         </Text>
       </View>
 
-      <Button text="Sign Up" />
+      <Button text="Sign Up" style={styles.signUpBtn}/>
 
       <Seperator text="Or sign up with" />
       <GoogleBtn />
@@ -77,7 +77,11 @@ const styles = StyleSheet.create({
   },
   bottomText: {
     alignItems: 'center'
-  }
+  },
+  signUpBtn: {
+    width: "100%",
+    height: 60,
+  },
 });
 
 export default SignUp;
