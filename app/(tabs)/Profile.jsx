@@ -18,6 +18,10 @@ const Profile = () => {
     router.push("/Profile/Setting");
   }
 
+  const onNewListingPress = () => {
+    router.push("/Profile/NewListing");
+  }
+
   return (
     <View style={{ flex: 1}}>
       <View style={styles.container}>
@@ -29,7 +33,7 @@ const Profile = () => {
         <ListItem title="My Listings" subtitle={`Already have ${num} listings`} />
         <ListItem title="Settings" subtitle="Account, FAQ, Contact" onPress={onSettingsPress} />
         </View>
-        <Button text="Add New Listing"/>
+        <Button text="Add New Listing" onPress={onNewListingPress}/>
       </View>
     </View>
   );

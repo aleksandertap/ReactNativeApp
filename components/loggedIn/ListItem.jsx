@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     padding: 16,
-    shadowColor: "#000",
-    shadowOffset: {
+    boxShadowColor: "#000",
+    boxShadowOffset: {
       width: 0,
       height: 3,
     },
-    shadowOpacity: 0.27,
-    shadowRadius: 4.64,
+    boxShadowOpacity: 0.27,
+    boxShadowRadius: 4.64,
     elevation: 6,
     backgroundColor: colors.white,
     marginVertical: 12,
