@@ -4,7 +4,7 @@ import { colors } from "@/assets/styles/colors";
 import { categories } from "@/data/categories";
 
 
-const CatergoryBar = ({ setSelectedCategory, selectedCategory }) => {
+const CatergoryBar = ({ setSelectedCategory, selectedCategory, categories }) => {
   return (
     <View style={styles.container}>
       <FlatList

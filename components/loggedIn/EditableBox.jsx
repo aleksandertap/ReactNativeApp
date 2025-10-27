@@ -1,6 +1,6 @@
-import React from 'react'
-import { View, Text, TextInput, StyleSheet } from 'react-native'
 import { colors } from '@/assets/styles/colors'
+import React from 'react'
+import { StyleSheet, Text, TextInput, View } from 'react-native'
 
 const EditableBox = ({ label, value, onChangeText, editable }) => {
   return (
@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
     container: {
         paddingHorizontal: 16,
         paddingVertical: 12,
-        boxShadowColor: "#000",
-        boxShadowOffset: {
+        shadowColor: "#000",
+        shadowOffset: {
           width: 0,
           height: 3,
         },
-        boxShadowOpacity: 0.27,
-        boxShadowRadius: 4.65,
+        shadowOpacity: 0.27,
+        shadowRadius: 4.65,
         elevation: 6,
         backgroundColor: colors.white,
         marginVertical: 12,

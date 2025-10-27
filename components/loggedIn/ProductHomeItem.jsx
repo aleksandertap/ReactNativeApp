@@ -9,7 +9,7 @@ const ProductHomeItem = ({title,image,price, onPress}) => {
     <View style={styles.container}>
         <Pressable onPress={onPress}>
             <Image style={styles.image} source={{uri:image}}/>
-            <Text style={styles.title}>{title}</Text>
+            <Text style={styles.title} numberOfLines={2} ellipsizeMode='tail'>{title}</Text>
             <Text style={styles.price}>{price}</Text>
         </Pressable>
     </View>

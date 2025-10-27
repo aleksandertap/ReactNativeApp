@@ -1,6 +1,6 @@
-import React from "react";
-import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import { colors } from "@/assets/styles/colors";
+import React from "react";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
 const ListItem = ({ title, subtitle, onPress, style }) => {
   return (
@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     padding: 16,
-    boxShadowColor: "#000",
-    boxShadowOffset: {
+    shadowColor: "#000",
+    shadowOffset: {
       width: 0,
       height: 3,
     },
-    boxShadowOpacity: 0.27,
-    boxShadowRadius: 4.64,
+    shadowOpacity: 0.27,
+    shadowRadius: 4.64,
     elevation: 6,
     backgroundColor: colors.white,
     marginVertical: 12,
