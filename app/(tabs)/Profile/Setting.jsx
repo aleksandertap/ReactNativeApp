@@ -33,7 +33,7 @@ const Setting = () => {
         <View style={styles.sectionHeader}>
           <Text style={styles.sectionTitle}>Personal Information</Text>
           <Pressable onPress={onEditPress}>
-            <Image style={styles.icon} source={require("../../assets/images/edit.png")} />
+            <Image style={styles.icon} source={require("../../../assets/images/edit.png")} />
           </Pressable>
         </View>
 

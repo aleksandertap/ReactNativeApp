@@ -34,6 +34,8 @@ const _layout = () => {
           <Tabs.Screen name="Home" />
           <Tabs.Screen name="Favorite" />
           <Tabs.Screen name="Profile" />
+
+          
         </Tabs>
    </>
   );

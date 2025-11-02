@@ -18,7 +18,7 @@ export default function RootLayout() {
         <Stack.Screen name="(splash)/SignIn" options={{ title: "Sign In" }} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="ProductDetails/ProductDetails" options={{headerShown: false}}/>
-        <Stack.Screen name="Profile" options={{ headerShown: false }}/>
+        <Stack.Screen name="Profile/NewListing" options={{headerShown: false}}/>
       </Stack>
     </>
   );
