@@ -1,7 +1,6 @@
 import React from "react";
 import { Pressable, FlatList, Image, Text, View, StyleSheet } from "react-native";
 import { colors } from "@/assets/styles/colors";
-import { categories } from "@/data/categories";
 
 
 const CatergoryBar = ({ setSelectedCategory, selectedCategory, categories }) => {

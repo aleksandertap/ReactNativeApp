@@ -1,9 +1,7 @@
 import Header from "@/components/loggedIn/Header";
 import React, { useEffect, useState } from "react";
-import { Text, View, StyleSheet, FlatList } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { View, StyleSheet, FlatList } from "react-native";
 import CatergoryBar from "@/components/loggedIn/CatergoryBar";
-// import { products } from "@/data/products"; // No longer needed
 import ProductHomeItem from "@/components/loggedIn/ProductHomeItem";
 import { colors } from "@/assets/styles/colors";
 import { useRouter } from "expo-router";
@@ -91,25 +89,16 @@ const Home = () => {
         },
       });
     };
-    // 1. Define the maximum length
-        const MAX_LENGTH = 20;
 
-        // 2. Trim the title and add ellipsis if needed
-        const trimmedTitle =
-            item.title.length > MAX_LENGTH
-                ? item.title.substring(0, MAX_LENGTH) + '...'
-                : item.title;
+    const MAX_LENGTH = 20;
+    const trimmedTitle =
+      item.title.length > MAX_LENGTH ? item.title.substring(0, MAX_LENGTH) + "..." : item.title;
+    const displayItem = {
+      ...item,
+      title: trimmedTitle,
+    };
 
-        // 3. Create a new product object with the trimmed title
-        const displayItem = {
-            ...item, // Keep all other properties (price, image, id, etc.)
-            title: trimmedTitle, // Overwrite the title with the trimmed version
-        };
-
-        // 4. Pass the new object to ProductHomeItem
-        return (
-            <ProductHomeItem onPress={() => onProductPress(item)} {...displayItem} />
-        );
+    return <ProductHomeItem onPress={() => onProductPress(item)} {...displayItem} />;
   };
 
   return (
